@@ -8,13 +8,13 @@ Contract.make {
         headers {
             header(contentType(), 'application/json;charset=UTF-8')
         }
-        body("id": 1L)
+        body("name": "Shade")
     }
     response {
         status(200)
         headers {
             header(contentType(),'application/json;charset=UTF-8')
         }
-        body( "id": 1L, "name": "Harry Porter")
+        body( "id": 2L, "name": "Shade")
     }
 }

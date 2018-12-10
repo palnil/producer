@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class BooksRequest {
+public class BookRequest {
 
-    Long id;
+    String name;
 }

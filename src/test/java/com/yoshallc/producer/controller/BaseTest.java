@@ -33,9 +33,9 @@ public class BaseTest {
     @BeforeEach
     public void setUp(){
 
-        BookDto bookDto = new BookDto(1L , "Harry Porter");
+        BookDto bookDto = new BookDto(2L , "Shade");
 
-        when(bookService.getBook(any(Long.class))).thenReturn(bookDto);
+        when(bookService.getBook(any(String.class))).thenReturn(bookDto);
 
 
         StandaloneMockMvcBuilder standaloneMockMvcBuilder = MockMvcBuilders

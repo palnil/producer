@@ -28,14 +28,14 @@ public class BookServiceTest {
     @Test
     public void whenCalled_getBooks_ShouldReturn_MatchingBook(){
 
-        assertNotNull(bookService.getBook(2L));
-        assertEquals(bookService.getBook(1L).toString(),new BookDto(1L,"Harry Porter").toString());
+        assertNotNull(bookService.getBook("Shade"));
+        assertEquals(bookService.getBook("Shade").toString(),new BookDto(2L,"Shade").toString());
     }
 
     @Test
     public void whenCalled_GetBooks_AndPassedWrongID_ShouldReturnNull(){
 
-        assertNull(bookService.getBook(5L));
+        assertNull(bookService.getBook("xxx"));
 
     }
 }

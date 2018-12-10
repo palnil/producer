@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class BookService {
 
-    public  BookDto getBook(Long id) {
+    public  BookDto getBook(String name) {
 
         List <BookDto> books = new ArrayList();
 
@@ -20,7 +20,7 @@ public class BookService {
 
         for(BookDto book : books) {
 
-            if(book.getId() == id)
+            if(book.getName() == name)
                 return book;
         }
 
